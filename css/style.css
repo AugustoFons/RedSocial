@@ -1,0 +1,407 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    max-width: 1440px;
+    max-height: 100%;
+    background-color: black;
+    background-image: linear-gradient(119deg, #0a100d7b 30%, #a22b295d 74%);
+    opacity: 100%;
+}
+
+.fondoImagen {
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1040px;
+    opacity: 5%;    
+    z-index: -10;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.icono {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.title {
+    align-self: center;
+    position: relative;  
+    right: 17px;  
+    margin-bottom: 4px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'Hi Melody';
+    font-style: normal; 
+    text-decoration: none;
+    font-size: 52px;
+    letter-spacing: 4px;
+    /* margin-top: 40px; */
+    
+}
+
+.navBar {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    column-gap: 33%;
+    margin-right: 110px;
+    margin-top: 20px;
+}
+
+.botonIni {
+    display: flex;
+    flex-direction: column; 
+}
+
+.inicio {
+    position: relative;
+    bottom: 13px;
+}
+
+.botonNos{
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros {
+    position: relative;
+    bottom: 23px;
+    right: 13px;
+}
+
+.button {
+    background: #05B317;
+    border: 5px solid #FFFAFA;
+    filter: blur(1px);
+    width: 210px;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+}
+
+.textbutton{
+    font-family: 'Hi Melody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    }
+
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Hi Melody';
+    font-style: normal; 
+    font-size: 28px;
+
+}
+
+.textoPage1 {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+    font-family: 'Alegreya Sans';
+    font-style: normal; 
+    flex-wrap: wrap;
+    max-width: 100%;
+    row-gap: 20px;
+    margin: 30px 0px;
+}
+
+h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 4px #FFFFFF;
+    margin-left: 20px;
+
+    }
+    
+    .parrafoIndex {
+    width: 100%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    }    
+
+    .sectionPage2 {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Alegreya Sans';
+        font-style: normal; 
+    }
+
+    .parrafoPage2 {
+        width: 1024px;
+        height: 1000px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        color: #FFFFFF;
+        margin: 20px;
+    }
+
+.img {
+    width: 100%;
+    height: 581px;
+    display: flex;
+    opacity: 40%;
+    justify-content: start;    
+    overflow: hidden;
+}
+
+
+.escritorimg {
+    align-self: flex-start;
+    Width:580px;
+    Height:400px;
+    position: relative;
+    right: 705px;
+    bottom: 40px;
+    z-index: -2;
+    filter: blur(2px);
+}
+
+.musicoimg {
+    position: relative;
+    z-index: 0;
+    min-width: 630px;
+    filter: blur(2px);
+}
+
+.pintorimg {
+    height: 495px;
+    width: 850px;
+    align-self: flex-end;
+    position: relative;
+    right: 920px;
+    z-index: -5;
+    filter: blur(2px);
+}
+
+.fotografiaimg{
+    min-width: 420px;
+    height: 619px;
+    align-self: flex-end;
+    position: relative;
+    right: 927px;
+    z-index: -4;
+    filter: blur(2px);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 50px 50px 70px;
+}
+
+.itemForm1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.itemForm2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    flex-wrap: wrap;
+
+}
+
+input[type=button] {
+    background-color: #05B217;
+    color:white;
+    padding: 7px;
+    border: 5px solid #FFFFFF;
+    border-radius: 19px;
+    font-family: 'Hi melody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    cursor: pointer;
+}
+
+
+.registro {
+    width: 200px;
+}
+
+input[type="email"] {
+background: #FFFFFF;
+border: 5px solid #f4a098;
+border-radius: 5px;
+height: 40px;
+width: 300px;
+text-indent: 3px;
+}
+
+.spanFormCorreo {
+    padding: 5px 5px;
+    font-family: 'Hi Melody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    }
+
+    input[type="password"] {
+        padding: 5px 5px;
+        background: #FFFFFF;
+        border: 5px solid #f4a098;
+        border-radius: 5px;
+        height: 40px;
+        width: 300px;
+        text-indent: 3px;
+    }
+
+    .spanFormPass {
+        padding: 5px 5px;
+        font-family: 'Hi Melody';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    
+.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    justify-content: left;
+    column-gap: 5px;
+}
+
+    input[type=checkbox] {
+        background: #FFFFFF;
+        border: 5px solid #f4a098;
+        border-radius: 5px;
+
+    }
+
+    .recordarme {
+        font-family: 'Hi Melody';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        position: relative;
+        top: 2px;
+        
+    }
+
+    section form p{
+        color: #FFFFFF;
+        font-family: 'Hi melody';
+        font-size: 40px;
+        z-index: 5;
+    }
+
+    .iniciar {
+        background: #05B217;
+        border: 4px solid #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    input[type=submit] {
+        font-family: 'Hi Melody';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        padding: 3px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        color: #FFFFFF;
+        cursor: pointer;
+
+    }
+
+.line2 {
+    width: 50%;
+    position: relative;
+    top: 20px;
+    
+}
+
+.line1 {
+    width: 400px;
+    position: relative;
+    bottom: 43px;
+    left: 220px;
+}
+
+.line0 {
+    width: 400px;
+    position: relative;
+    top: 40px;
+    right: 220px;
+
+}
+
+    footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footer h3 {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Hi melody';
+    }
