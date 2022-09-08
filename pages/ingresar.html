@@ -11,55 +11,29 @@
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
 </head>
 
-<body>
+<body class="bodyPrincipal">
 
     <img class="fondoImagen" src="../img/fondo.jfif" alt="">
 
-        <header>
+    <header>
+        <nav>
+            <div class="navBar">
+                <ul class="navBotones">
+                    <li><a href="#" class="botones">Iniciar Sesión</a></li>
+                    <li><a href="#" class="botones">Registrate</a></li>
+                </ul>
 
-
-            <div class="icono">
-                <a class="icono" href="../index.html"><img src="../img/net.png" alt=""></a>
-                <div class="title"><a href="../index.html"><h1 class="artPlace">ArtPlace</h1></a></div>
+                <ul class="logo">
+                    <li class="item1"><a href="../index.html"><img class="icon" src="../img/net.png" alt=""></a></li>
+                    <li class="item2"><a href="../index.html"><h1 class="artPlace">ArtPlace</h1></a></li>
+                </ul> 
             </div>
-            
-            <nav>
-                <ul class="navBar">
-                    
-                    <li>
-                        <div class="botonIni">
-                            <a href="../index.html" class="home"><img src="../img/home.svg" alt="Inicio"></a>
-                            <a class="inicio" href="../index.html">Inicio</a>
-                        </div>    
-                    </li>
-                    
-                    <li>
-                        <div class="botonNos">
-                            <a class= "group" href="nosotros.html"><img src="../img/group.svg" alt="Nosotros"></a>
-                            <a class="nosotros" href="nosotros.html">Nosotros</a>
-                        </div>  
-                    </li>
-
-                    <li><a href="#"><button class="button" type="submit"><span class="textbutton">Ingresar</span></button></a></li>
-
-                </ul>          
-            </nav>
-        
-        </header>
+        </nav> 
+    </header>
 
             
-        <main>
-
-            <section>
+        <main class="mainIngresar">
                 <form class="formulario" action="">
-                    <div class="itemForm1">
-                        <input class="continuar" type="button" value="Continuar como espectador">
-                        <input class="registro" type="button" value="Registrarme">
-                    </div>
-
-                    <hr class="line0">
-                    <p> o </p>
-                    <hr class="line1">
 
                     <div class="email">
                         <label class="itemForm2" for="email">
@@ -79,13 +53,13 @@
                             <label class="recordarme" for="Recordarme">Recordarme</label>
                             <input type="checkbox" name="Recordarme" id="Recordarme">
                     </div>
-                        
-                    <input class="iniciar" type="submit" value="Iniciar Sesión">
-                    <hr class="line2">
+                    <div class="botonForm">
+                        <a href="#" class="botones">Iniciar Sesión</a>
+                    </div>
                 </form>
-            </section>
         </main>
 </body>
+<hr>
 <footer>
     <div class="footer"><h3>&copy; Autor: Augusto Fons</h3></div>
 </footer>

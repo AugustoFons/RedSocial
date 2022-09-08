@@ -16,55 +16,55 @@
 
 </head>
 
-<body>
+<body class="bodyPrincipal">
 
     <img class="fondoImagen" src="./img/fondo.jfif" alt="">
         
         <header>
-
-
-            <div class="icono">
-                <a class="icono" href="#"><img src="./img/net.png" alt=""></a>
-                <div class="title"><a href="#"><h1 class="artPlace">ArtPlace</h1></a></div>
-            </div>
-            
             <nav>
-                <ul class="navBar">
-                    
-                    <li>
-                        <div class="botonIni">
-                            <a href="#" class="home"><img src="./img/home.svg" alt="Inicio"></a>
-                            <a class="inicio" href="#">Inicio</a>
-                        </div>    
-                    </li>
-                    
-                    <li>
-                        <div class="botonNos">
-                            <a class= "group" href="./pages/nosotros.html"><img src="./img/group.svg" alt="Nosotros"></a>
-                            <a class="nosotros" href="./pages/nosotros.html">Nosotros</a>
-                        </div>  
-                    </li>
+                <div class="navBar">
+                    <ul class="navBotones">
+                        <li><a href="./pages/ingresar.html" class="botones">Iniciar Sesión</a></li>
+                        <li><a href="#" class="botones">Registrate</a></li>
+                    </ul>
 
-                    <li><a href="./pages/ingresar.html"><button class="button" type="submit"><span class="textbutton">Ingresar</span></button></a></li>
-
-                </ul>          
-            </nav>
-        
+                    <ul class="logo">
+                        <li class="item1"><a href="#"><img class="icon" src="./img/net.png" alt=""></a></li>
+                        <li class="item2"><a href="#"><h1 class="artPlace">ArtPlace</h1></a></li>
+                    </ul> 
+                </div>
+            </nav> 
         </header>
 
         <main class="mainPage1">
             
-            <section class="textoPage1">
-                <h2>Todo tu contenido artistico <br> en un solo lugar</h2>
-                <p class="parrafoIndex">Crea tu perfil publico, interactua y comparti tu <br> material  gratuitamente o monetizandolo</p>
-            </section>
-            
+            <div class="textoPage1">
+                <h2 class="tituloIndex">Todo tu contenido artistico <br> en un solo lugar</h2>
+                <p class="parrafoIndex">Crea tu perfil publico, interactua y comparti tu <br> material  gratuitamente o monetizandolo <a href="#popUp" class="botonInfo">+</a></p>
+            </div>
+
+            <div id="popUp" class="contenedor">
+                <div class="contenedorPopUp">
+                        <div class="textPop">
+                            <h3 class="h3Pop">¿Quienes Somos?</h3>
+                            <p class="pPop">Somos la red social en la que artistas independientes (Musicos, escritores, pintores, etc), puedan crear un perfil publico, subir contenido (videos, musica, fotos, archivos en general) y compartirlo gratuitamente o dar la opcion de pedir alguna colaboracion economica con servicios como mercado pago, transferencias, etc.</p>
+                        </div>
+                        <a href="#" class="botonClose">X</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                    <div class="parrafoBox"><p> <b>Ingresa como espectador</b> <br> <br> ¡Busca a tu artista favorito <br> sin necesidad de registrarte! <br></p></div>
+                    <div class="botonBox"><a href="./pages/continuar.html" class="botones">Continuar</a></div>
+            </div>
+
             <div class="img">
                     <img class="musicoimg" src="./img/musicaimg.png" alt="musico">
                     <img class="escritorimg" src="./img/escritorimg.png" alt="escritor">
                     <img class="pintorimg" src="./img/pintorimg.png" alt="pintor">
                     <img class="fotografiaimg" src="./img/fotoimg.png" alt="fotografia">
             </div>
+            
         </main>
     
         <footer>
