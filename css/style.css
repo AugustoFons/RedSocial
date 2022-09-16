@@ -7,7 +7,7 @@
 
 
 .bodyPrincipal {
-    max-width: 1440px;
+    max-width: 100%;
     max-height: 100%;
     background-color: black;
     background-image: linear-gradient(119deg, #0a100d7b 30%, #a22b295d 74%);
@@ -17,7 +17,7 @@
     position: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 1440px;
+    width: 100%;
     max-height: 100%;
     opacity: 5%;    
     z-index: -10;
@@ -113,7 +113,6 @@ li{
 }
 
 .mainPage1 {    
-    width: 100%;
     display: grid;
     grid-template-rows: 210px 100px 1fr ;
     grid-template-columns: repeat(12,1fr);
@@ -170,15 +169,15 @@ li{
     .contenedor {
         width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        position: fixed;
+        display: none;
         visibility: hidden;
         opacity: 0%;
-        transition: all 500ms;
     }
 
     .contenedor:target {
+        display: flex;
+        align-items: center;
+        position: fixed;
         background: rgba(0, 0, 0,0.8);
         visibility: visible;
         opacity: 1;
@@ -313,61 +312,65 @@ li{
 
     .img {
     grid-row:3;
-    grid-column: 1/13; 
-    width: 100%;
-    height: 581px;
+    grid-column: 1/13;
+    max-height: max-content;
     display: flex;
-    opacity: 40%;
-    justify-content: start;    
+    align-items: flex-end;
     overflow: hidden;
 }
 
+.img img {
+    width: 100%;
+    opacity: 40%;
+    filter: blur(1px);
+}
 
-    .escritorimg {
+
+/*     .escritorimg {
     align-self: flex-start;
-    Width:580px;
+    max-width:44.977778%;
     Height:400px;
     position: relative;
-    right: 705px;
-    bottom: 40px;
-    z-index: -2;
+    right: 749px;
+    bottom: 47px;
+    z-index: 0;
     filter: blur(2px);
 }
 
     .musicoimg {
     position: relative;
     z-index: 0;
-    min-width: 630px;
+    max-width: 47.75%;
     filter: blur(2px);
 }
 
     .pintorimg {
     height: 495px;
-    width: 850px;
+    max-width: 59.0277778%;
     align-self: flex-end;
     position: relative;
-    right: 920px;
-    z-index: -5;
+    right: 980px;
+    z-index: -1;
     filter: blur(2px);
 }
 
     .fotografiaimg{
-    min-width: 420px;
+    max-width: 33.33333%;
     height: 619px;
     align-self: flex-end;
     position: relative;
-    right: 927px;
-    z-index: -4;
+    right: 1029px;
+    z-index: 0;
     filter: blur(2px);
-}
+} */
 
 /* INGRESAR */
 
 .mainIngresar {
     display: flex;
     justify-content: center;
-    margin-top: 65px;  
-    margin-bottom: 90px;  
+    margin-top: 95px;  
+    margin-bottom: 130px;  
 }
 
 .formulario {
@@ -376,9 +379,9 @@ li{
         row-gap: 30px;
         margin-left: 20px;
         border-radius: 20px;  
-        padding: 15px;
+        padding: 20px;
         max-width: 420px;
-        max-height: 380px;
+        max-height: 410px;
         background: rgb(0, 0, 0,0.4);
         box-shadow: 0 0 10px #dc4c11;
         transition: background 1s;
@@ -473,29 +476,59 @@ li{
         
     }
 
-
-    hr {
-    width: 50%;
-    position: relative;
-    left: 25%; 
-    }
-
     /* FOOTER */
 
     footer {
-    height: 50px;
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0,0.8);   
     align-items: center;
+
     }
 
-    .footer h3 {
-        color: #FFFFFF;
-        font-size: 24px;
+    .foot {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .autor {
+        color: whitesmoke;
+        width: max-content;
+        font-size: 18px;
         font-weight: 600;
-        font-family: 'Hi melody';
+        letter-spacing: 2px;
+        font-family:'Alegreya Sans';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+
+    }
+
+    .enlaces {
+        color: whitesmoke;
+        width: max-content;
+
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        margin-right:15px;
+
+    }
+
+    .enlaces a{
+        font-family:'Alegreya Sans';
+        color: whitesmoke;
+        letter-spacing:2px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration:underline;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     /* PAGINA CONTINUAR : */
@@ -594,7 +627,7 @@ li{
         max-width: 1440px;
         max-height: 100%;
         display: flex;
-        column-gap: 40px;
+        column-gap: 60px;
         margin: 50px;
         justify-content: center;
     }
@@ -611,8 +644,10 @@ li{
     .user {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
+    margin-left: 3px;
+    margin-right: 3px;
     }
 
     .user img {
@@ -681,7 +716,8 @@ li{
     flex-direction: column;
     justify-content: flex-end;
     row-gap: 10px; 
-    margin-top: 8px;
+    margin-top: 11px;
+    margin-right: 10px;
 }
 
 a .fa {
@@ -701,15 +737,15 @@ a .fa-twitter-square, a .fa-instagram, a .fa-facebook-square {
 
 .checkBook {
     position: relative;
-    top: 8px;
-    left: -30px;
+    right: 40%;
+    top: 10px;
     width: max-content;
 }
 
 .checkPlay {
     position: relative;
-    top: 8px;
-    left: -30px;
+    right: 40%;
+    top: 10px;
     width: max-content;
 }
 
@@ -718,6 +754,7 @@ a .fa-twitter-square, a .fa-instagram, a .fa-facebook-square {
     font-size: 28px;
     cursor: pointer;
 }
+
 
 .fa-eye:hover {
     color: #2F4858;
@@ -742,13 +779,8 @@ bottom: 0px;
 left: 0px;
 }
 
-.checkPlay {
-    width: max-content;
-}
 
-.checkBook {
-    width: max-content;
-}
+
 
 .ifm{
     display: none;
@@ -772,10 +804,16 @@ left: 0px;
 }
 
 #leer:checked ~ .checkBook {
+    background-color: #a22b29;
     position: absolute;
     left: 30%;
     top: 25%;
     z-index: 20;
-    background-color: #a22b29;
-    border-radius: 40%;
-}
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
