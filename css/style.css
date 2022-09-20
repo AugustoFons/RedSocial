@@ -11,6 +11,9 @@
     max-height: 100%;
     background-color: black;
     background-image: linear-gradient(119deg, #0a100d7b 30%, #a22b295d 74%);
+    font-family: 'Alegreya Sans';
+    color: white;
+    text-decoration:none;
 }
 
 .fondoImagen {
@@ -27,13 +30,10 @@
     position:sticky;
     top:0px;
     z-index: 20;
-
 }
 
 .artPlace {
-    color: #FFFFFF;
     font-family: 'Hi Melody';
-    font-style: normal; 
     font-size: 40px;
     letter-spacing: 4px;
 }
@@ -46,8 +46,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: 'logo botones botones .' ;  
-    transition: background 1s;
-
+    transition: all 1s;
 }
 
 .navBar:hover {
@@ -78,7 +77,6 @@
 .botones {
 	box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-	background-color:#ffc477;
 	border-radius:6px;
 	border:1px solid #eeb44f;
     cursor:pointer;
@@ -88,12 +86,12 @@
     letter-spacing: 2px;
 	font-weight:bold;
 	padding:6px 24px;
-	text-decoration:none;
 	text-shadow:0px 1px 0px #cc9f52;
+    text-decoration:none;
 }
+
 .botones:hover {
 	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-	background-color:#fb9e25;
 }
 .botones:active {
 	position:relative;
@@ -112,30 +110,29 @@ li{
     font-size: 28px;
 }
 
-.mainPage1 {    
-    display: grid;
-    grid-template-rows: 210px 100px 1fr ;
-    grid-template-columns: repeat(12,1fr);
+    .mainPage1{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
 }
-.textoPage1 {
-    grid-row: 1;
-    grid-column: 1/9;
-    font-family: 'Alegreya Sans';
-    font-style: normal; 
+
+    .textoPage1 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     text-align: left;
-    max-width: 100%;
-    height: max-content;
-    margin: 30px 0px;
+    width: 55%;
     z-index:10;
-
 }
 
-.tituloIndex {
+    .tituloIndex {
     font-weight: bold;
     font-size: 52px;
     line-height: 75px;
     letter-spacing: 7px;
-    color: #FFFFFF;
     -webkit-text-stroke: 4px #FFFFFF;
     margin-left: 20px;
     }
@@ -145,7 +142,6 @@ li{
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 3px;
-    color: #FFFFFF;
     margin-left: 20px;
     }    
 
@@ -154,12 +150,10 @@ li{
         height: 50px;
         box-shadow: 3px 4px 0px 0px #899599;
         background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-        background-color:white;
         border-radius:100%;
         border:1px solid #d6bcd6;
         cursor:pointer;
         color: black;
-        font-family: 'Alegreya Sans';
         font-size:36px;
         padding:0px 7px;
         text-decoration:none;
@@ -177,7 +171,9 @@ li{
     .contenedor:target {
         display: flex;
         align-items: center;
+        justify-content: center;
         position: fixed;
+        top:70px;
         background: rgba(0, 0, 0,0.8);
         visibility: visible;
         opacity: 1;
@@ -189,12 +185,10 @@ li{
     }
 
     .contenedorPopUp {
-        width: 100%;
-        max-width: 600px;
+        max-width: 100%;
+        width: 70%;
         border-radius: 25%;
         position: absolute;
-        top: 7%;
-        left: 27%;
         visibility: hidden;
         transition: all 300ms;
     }
@@ -204,13 +198,10 @@ li{
     padding: 50px;
     overflow:scroll;
     background-color: #e1e2ed;
-    font-family: 'Alegreya Sans';
-    font-style: normal; 
     max-width: 100%;
     height: max-content;
     text-align: center;
-
-}
+    }
 
     .h3Pop{
         color: black ;
@@ -244,7 +235,6 @@ li{
         top: -20px;   
         cursor:pointer;
         color: white;
-        font-family: 'Alegreya Sans';
         font-size:36px;
         padding:0px 15px;
         text-decoration:none;
@@ -262,22 +252,23 @@ li{
         top:1px;
     }
     
+    .box-content {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .box {
-        grid-row: 1/3;
-        grid-column: 9/12;
-        justify-self: center;
-        align-self: center;
-        margin-left: 20px;
         border-radius: 20px;  
-        padding: 10px;
         max-width: 450px;
-        max-height: 250px;
+        height: 70%;
         display: flex;
+        justify-content: center;
         background: rgb(0, 0, 0,0.4);
         box-shadow: 0 0 10px #dc4c11;
         flex-direction: column;
-        transition: background 1s;
+        transition: all 1s;
 }
 
     .box:hover {
@@ -288,11 +279,9 @@ li{
 }
 
     .parrafoBox {
-    height: 200px;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
     letter-spacing: 2px;
 }
 
@@ -300,14 +289,13 @@ li{
     height: max-content;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
     .mainPage1 .parrafoBox p {
-        color: white;
         font-size: 24px;
-        font-family: 'Alegreya Sans';
         text-align: center;
+        margin: 15px;
     }
 
     .img {
@@ -345,7 +333,7 @@ li{
         max-height: 410px;
         background: rgb(0, 0, 0,0.4);
         box-shadow: 0 0 10px #dc4c11;
-        transition: background 1s;
+        transition: all 1s;
 }
 
     .botonForm {
@@ -380,12 +368,9 @@ li{
 
     .spanFormCorreo {
     padding: 5px 5px;
-    font-family:'Alegreya Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
     }
 
     input[type="password"] {
@@ -400,12 +385,9 @@ li{
 
     .spanFormPass {
         padding: 5px 5px;
-        font-family:'Alegreya Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 20px;
         letter-spacing: 0.1em;
-        color: #FFFFFF;
     }
     
     .checkbox {
@@ -420,17 +402,15 @@ li{
         background: #FFFFFF;
         border: 5px solid #f4a098;
         border-radius: 5px;
+        margin-top: 3px;
 
     }
 
     .recordarme {
-        font-family:'Alegreya Sans';
-        font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 30px;
         letter-spacing: 0.1em;
-        color: #FFFFFF;
         position: relative;
         top: 2px;
         
@@ -600,12 +580,12 @@ li{
     border-radius: 35px;
     border: white double 4px;
     box-shadow: 0 0 10px #dc4c11;
-    height: 300px;
+    height: 350px;
     max-width: 340px;
     }
 
 
-    .card:hover  .user img {
+    .card:hover .user .foto-user {
         box-shadow: 0 0 10px #dc4c11;
 
     }
@@ -613,13 +593,11 @@ li{
     .user {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    margin-left: 3px;
-    margin-right: 3px;
     }
 
-    .user img {
+    .user .foto-user {
     border-radius: 100px;
     width: 150px;
     height: 150px;
@@ -627,32 +605,69 @@ li{
     margin-top: -30px;
     }
 
+    .icono-position {
+        position: relative;
+        top: 10px;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .fa-heart{
+        color: white;
+        cursor: pointer;
+        font-size: 28px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+    .fa-heart:focus{
+        color: red;
+    }
+
     .nombre{
     font-family: 'Alegreya Sans';
-    font-style: normal;
     font-size: 28px; 
     letter-spacing: 3px;
     color: white;
     text-align: center;
-    margin-top: 10px;
     }
 
     .descripcion {
     font-family: 'Alegreya Sans';
-    font-style: normal; 
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: white;
     text-align: center;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 70px;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px; 
+
+    }
+
+    a .fa-brands {
+        color: white;
+        justify-content: center;
+        font-size: 28px;
+        transition: 500ms;
+    }
+
+    .fa-brands:hover, .fa-music:hover, .fa-palette:hover, .fa-xmark:hover {
+        color: #2F4858;
+        transition: 500ms;
     }
 
     .botonesUser {
     display: flex;
-    column-gap: 15px;
-    align-self: flex-end;
     justify-self: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 50px;
     align-items: flex-end;
@@ -671,69 +686,25 @@ li{
     border-radius: 30px;
     padding: 7px 20px;
     text-decoration: none;
+    transition: all 350ms;
     }
 
     .btnUser a:hover {
     font-weight: bold;
     color: #2F4858;
     background-color: #FAEAFF;
-    transition: 350ms;
-
     }
 
-.contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: 10px; 
-    margin-top: 11px;
-    margin-right: 10px;
-}
-
-a .fa {
-    justify-content: center;
+    .botonVolver {
     font-size: 28px;
-    transition: 500ms;
-}
-
-a:hover .fa {
-    color: #2F4858;
-    transition: 500ms;
-    }
-
-a .fa-twitter-square, a .fa-instagram, a .fa-facebook-square {
-    color: white;
-}
-
-.fa-eye {
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-
-.fa-eye:hover {
-    color: #2F4858;
-    transition: 500ms;
-}
-
-.fa-eye-position {
-    position: relative;
-    right: 40%;
-    top: 10px;
-    width: max-content;
-}
-
-.botonVolver {
-    font-size: 28px;
-    color: rgba(255, 255, 255,0.5);
+    color: rgba(255, 255, 255,0.8);
     display: inline-block;
     transition: 700ms color;
-}
+    }
 
-.botonVolver:hover {
+    .botonVolver:hover {
     color: white;
-}
+    }
 
 /* card musica */
 

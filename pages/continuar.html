@@ -13,8 +13,8 @@
         <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Hi Melody' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
-        <script src="https://kit.fontawesome.com/f3d5cbbad8.js" crossorigin="anonymous"></script>
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
 
 <body class="bodyPrincipal">
     
@@ -44,12 +44,12 @@
         <div class="containerCategorias">
             <nav class="categorias">
                 <ul>
-                    <li><a href="#">musica</a></li>
-                    <li><a href="#">musica</a></li>
-                    <li><a href="#">musica</a></li>
-                    <li><a href="#">musica</a></li>
-                    <li><a href="#">musica</a></li>
-                    <li><a href="#">musica</a></li>
+                    <li><a href="#">Música</a></li>
+                    <li><a href="#">Pintura</a></li>
+                    <li><a href="#">Fotografia</a></li>
+                    <li><a href="#">Lectura</a></li>
+                    <li><a href="#">Dibujo</a></li>
+                    <li><a href="#">Poesia</a></li>
                 </ul>
                 <label class="closeMen" for="btnMenu">✖️</label>
             </nav>
@@ -61,30 +61,29 @@
                 <div class="user">
                     <div>
                         <input type="checkbox" id="reproducir">
-                        <label class="fa-eye-position" for="reproducir"><i class="fa-regular fa-eye"></i></label>
+                        <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
                         <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                     </div>
-                    <img src="../img/mozart.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <img class="foto-user"src="../img/mozart.jpg">
+                    <div>
+                        <i tabindex="0" class="fa-solid fa-heart"></i>
                     </div>
                 </div>
                 <div>
                         <h1 class="nombre">Amadeus Mozart</h1>
                         <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
                 </div>
-                
+                <div class="contacts">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
                 <div class="botonesUser">
                     <div class="btnUser">
                         <a href="#">Ver perfil</a>
                     </div>
                     <div class="btnUser">
                         <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
                     </div>
                 </div>
             </div>
@@ -93,35 +92,34 @@
                 <div class="user">
                     <div>
                         <input type="checkbox" id="leer">
-                        <label class="fa-eye-position" for="leer"><i class="fa-regular fa-eye"></i></label>
+                        <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
                         <div class="ifm">
                             <div class="ifm-book">
                                 <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
                             </div>
-                            <label for="leer"><a href="" class="botonVolver">&#128473;</a></label>
+                            <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
                         </div>
                     </div>
-                        <img src="../img/Shakespeare.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
+                        <img class="foto-user" src="../img/Shakespeare.jpg">
+                        <div>
+                            <i tabindex="0" class="fa-solid fa-heart"></i>
+                        </div>
                 </div>
                 <div>
                         <h1 class="nombre">William Shakespeare</h1>
-                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p> <br>
+                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
                 </div>
-
+                <div class="contacts">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
                 <div class="botonesUser">
                     <div class="btnUser">
                         <a href="#">Ver perfil</a>
                     </div>
                     <div class="btnUser">
                         <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
                     </div>
                 </div>        
             </div>    
@@ -130,478 +128,568 @@
                 <div class="user">
                     <div>
                         <input type="checkbox" id="pintura">
-                        <label class="fa-eye-position" for="pintura"><i class="fa-regular fa-eye"></i></label>
+                        <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
                         <div class="ifm">
                             <div class="ifm-pintura">
                                 <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
                             </div>
-                            <label for="pintura"><a href="" class="botonVolver">&#128473;</a></label>
+                            <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
                         </div>
                     </div>
-                    <img src="../img/frida.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <img class="foto-user" src="../img/frida.jpg">
+                    <div>
+                        <i tabindex="0" class="fa-solid fa-heart"></i>
                     </div>
                 </div>
                 <div>
                         <h1 class="nombre">Frida Kahlo</h1>
-                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras <br><br></p>
+                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
                 </div>
-                
+                <div class="contacts">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
                 <div class="botonesUser">
                     <div class="btnUser">
                         <a href="#">Ver perfil</a>
                     </div>
                     <div class="btnUser">
                         <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
                     </div>
                 </div>
             </div>
     </div> 
     
-    <section class="repeticiones">
-        <div class="perfiles">
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="reproducir">
-                        <label class="fa-eye-position" for="reproducir"><i class="fa-regular fa-eye fafa"></i></label>
-                        <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <img src="../img/mozart.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
+<section class="repeat">
+    <div class="perfiles">
+        <div class="card">
+            <div class="user">
                 <div>
-                        <h1 class="nombre">Amadeus Mozart</h1>
-                        <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+                    <input type="checkbox" id="reproducir">
+                    <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
+                    <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                 </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
+                <img class="foto-user"src="../img/mozart.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
                 </div>
             </div>
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="leer">
-                        <label class="fa-eye-position" for="leer"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-book">
-                                <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
-                            </div>
-                            <label for="leer"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                        <img src="../img/Shakespeare.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
+            <div>
+                    <h1 class="nombre">Amadeus Mozart</h1>
+                    <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+            </div>
+            <div class="contacts">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="botonesUser">
+                <div class="btnUser">
+                    <a href="#">Ver perfil</a>
                 </div>
-                <div>
-                        <h1 class="nombre">William Shakespeare</h1>
-                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p> <br>
-                </div>
-    
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>        
-            </div>    
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="pintura">
-                        <label class="fa-eye-position" for="pintura"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-pintura">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
-                            </div>
-                            <label for="pintura"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                    <img src="../img/frida.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Frida Kahlo</h1>
-                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras <br><br></p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
+                <div class="btnUser">
+                    <a href="#">Donar</a>
                 </div>
             </div>
         </div>
-    
-        <div class="perfiles">
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="reproducir">
-                        <label class="fa-eye-position" for="reproducir"><i class="fa-regular fa-eye fafa"></i></label>
-                        <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <img src="../img/mozart.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
+
+        <div class="card">
+            <div class="user">
                 <div>
-                        <h1 class="nombre">Amadeus Mozart</h1>
-                        <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+                    <input type="checkbox" id="leer">
+                    <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
+                    <div class="ifm">
+                        <div class="ifm-book">
+                            <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
+                        </div>
+                        <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                    </div>
                 </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
+                    <img class="foto-user" src="../img/Shakespeare.jpg">
+                    <div>
+                        <i tabindex="0" class="fa-solid fa-heart"></i>
                     </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
+            </div>
+            <div>
+                    <h1 class="nombre">William Shakespeare</h1>
+                    <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
+            </div>
+            <div class="contacts">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="botonesUser">
+                <div class="btnUser">
+                    <a href="#">Ver perfil</a>
+                </div>
+                <div class="btnUser">
+                    <a href="#">Donar</a>
+                </div>
+            </div>        
+        </div>    
+
+        <div class="card">
+            <div class="user">
+                <div>
+                    <input type="checkbox" id="pintura">
+                    <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
+                    <div class="ifm">
+                        <div class="ifm-pintura">
+                            <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+                        </div>
+                        <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
                     </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
+                </div>
+                <img class="foto-user" src="../img/frida.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
                 </div>
             </div>
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="leer">
-                        <label class="fa-eye-position" for="leer"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-book">
-                                <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
-                            </div>
-                            <label for="leer"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                        <img src="../img/Shakespeare.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
+            <div>
+                    <h1 class="nombre">Frida Kahlo</h1>
+                    <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
+            </div>
+            <div class="contacts">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="botonesUser">
+                <div class="btnUser">
+                    <a href="#">Ver perfil</a>
                 </div>
-                <div>
-                        <h1 class="nombre">William Shakespeare</h1>
-                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p> <br>
-                </div>
-    
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>        
-            </div>    
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="pintura">
-                        <label class="fa-eye-position" for="pintura"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-pintura">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
-                            </div>
-                            <label for="pintura"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                    <img src="../img/frida.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Frida Kahlo</h1>
-                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras <br><br></p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
+                <div class="btnUser">
+                    <a href="#">Donar</a>
                 </div>
             </div>
         </div>
-    
-        <div class="perfiles">
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="reproducir">
-                        <label class="fa-eye-position" for="reproducir"><i class="fa-regular fa-eye fafa"></i></label>
-                        <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <img src="../img/mozart.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Amadeus Mozart</h1>
-                        <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>
+</div>
+<div class="perfiles">
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="reproducir">
+                <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
+                <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="leer">
-                        <label class="fa-eye-position" for="leer"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-book">
-                                <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
-                            </div>
-                            <label for="leer"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                        <img src="../img/Shakespeare.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">William Shakespeare</h1>
-                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p> <br>
-                </div>
-    
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>        
-            </div>    
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="pintura">
-                        <label class="fa-eye-position" for="pintura"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-pintura">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
-                            </div>
-                            <label for="pintura"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                    <img src="../img/frida.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Frida Kahlo</h1>
-                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras <br><br></p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>
+            <img class="foto-user"src="../img/mozart.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
             </div>
         </div>
-    
-        <div class="perfiles">
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="reproducir">
-                        <label class="fa-eye-position" for="reproducir"><i class="fa-regular fa-eye fafa"></i></label>
-                        <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <img src="../img/mozart.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Amadeus Mozart</h1>
-                        <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>
+        <div>
+                <h1 class="nombre">Amadeus Mozart</h1>
+                <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
             </div>
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="leer">
-                        <label class="fa-eye-position" for="leer"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-book">
-                                <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
-                            </div>
-                            <label for="leer"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                        <img src="../img/Shakespeare.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">William Shakespeare</h1>
-                        <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p> <br>
-                </div>
-    
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>        
-            </div>    
-    
-            <div class="card">
-                <div class="user">
-                    <div>
-                        <input type="checkbox" id="pintura">
-                        <label class="fa-eye-position" for="pintura"><i class="fa-regular fa-eye"></i></label>
-                        <div class="ifm">
-                            <div class="ifm-pintura">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
-                            </div>
-                            <label for="pintura"><a href="" class="botonVolver">&#128473;</a></label>
-                        </div>
-                    </div>
-                    <img src="../img/frida.jpg">
-                    <div class="contacts">
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div>
-                        <h1 class="nombre">Frida Kahlo</h1>
-                        <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras <br><br></p>
-                </div>
-                
-                <div class="botonesUser">
-                    <div class="btnUser">
-                        <a href="#">Ver perfil</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">Donar</a>
-                    </div>
-                    <div class="btnUser">
-                        <a href="#">+ Seguir</a>
-                    </div>
-                </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="leer">
+                <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
+                <div class="ifm">
+                    <div class="ifm-book">
+                        <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
+                    </div>
+                    <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+                <img class="foto-user" src="../img/Shakespeare.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
+                </div>
+        </div>
+        <div>
+                <h1 class="nombre">William Shakespeare</h1>
+                <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>        
+    </div>    
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="pintura">
+                <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
+                <div class="ifm">
+                    <div class="ifm-pintura">
+                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                    <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+            <img class="foto-user" src="../img/frida.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Frida Kahlo</h1>
+                <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="perfiles">
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="reproducir">
+                <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
+                <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <img class="foto-user"src="../img/mozart.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Amadeus Mozart</h1>
+                <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="leer">
+                <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
+                <div class="ifm">
+                    <div class="ifm-book">
+                        <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
+                    </div>
+                    <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+                <img class="foto-user" src="../img/Shakespeare.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
+                </div>
+        </div>
+        <div>
+                <h1 class="nombre">William Shakespeare</h1>
+                <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>        
+    </div>    
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="pintura">
+                <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
+                <div class="ifm">
+                    <div class="ifm-pintura">
+                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                    <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+            <img class="foto-user" src="../img/frida.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Frida Kahlo</h1>
+                <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="perfiles">
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="reproducir">
+                <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
+                <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <img class="foto-user"src="../img/mozart.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Amadeus Mozart</h1>
+                <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="leer">
+                <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
+                <div class="ifm">
+                    <div class="ifm-book">
+                        <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
+                    </div>
+                    <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+                <img class="foto-user" src="../img/Shakespeare.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
+                </div>
+        </div>
+        <div>
+                <h1 class="nombre">William Shakespeare</h1>
+                <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>        
+    </div>    
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="pintura">
+                <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
+                <div class="ifm">
+                    <div class="ifm-pintura">
+                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                    <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+            <img class="foto-user" src="../img/frida.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Frida Kahlo</h1>
+                <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="perfiles">
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="reproducir">
+                <label class="icono-position" for="reproducir"><i class="fa-sharp fa-solid fa-music"></i></label>
+                <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215868715&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <img class="foto-user"src="../img/mozart.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Amadeus Mozart</h1>
+                <p class="descripcion">Hola! Soy Amadeus, pianista y compositor independiente, escucha mi musica y seguime en mis redes</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="leer">
+                <label class="icono-position" for="leer"><i class="fa-solid fa-book-open"></i></label>
+                <div class="ifm">
+                    <div class="ifm-book">
+                        <iframe class="scribd_iframe_embed" title="Shakespeare - Hamlet (Trad. a. Alegria)" src="https://www.scribd.com/embeds/431079701/content?start_page=1&view_mode=scroll&access_key=key-DekBcdNjGxJI8UwcZoIH" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="90%" frameborder="0" ></iframe>
+                    </div>
+                    <label for="leer"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+                <img class="foto-user" src="../img/Shakespeare.jpg">
+                <div>
+                    <i tabindex="0" class="fa-solid fa-heart"></i>
+                </div>
+        </div>
+        <div>
+                <h1 class="nombre">William Shakespeare</h1>
+                <p class="descripcion">Hola! Soy William, entra a mi perfil y lee mis libros</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>        
+    </div>    
+
+    <div class="card">
+        <div class="user">
+            <div>
+                <input type="checkbox" id="pintura">
+                <label class="icono-position" for="pintura"><i class="fa-solid fa-palette"></i></label>
+                <div class="ifm">
+                    <div class="ifm-pintura">
+                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=13510867623530896" height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                    <label for="pintura"><a href="" class="botonVolver"><i class="fa-solid fa-xmark"></i></a></label>
+                </div>
+            </div>
+            <img class="foto-user" src="../img/frida.jpg">
+            <div>
+                <i tabindex="0" class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div>
+                <h1 class="nombre">Frida Kahlo</h1>
+                <p class="descripcion">Hola! Soy Frida, entra a mi perfil y mira mis últimas obras</p>
+        </div>
+        <div class="contacts">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="botonesUser">
+            <div class="btnUser">
+                <a href="#">Ver perfil</a>
+            </div>
+            <div class="btnUser">
+                <a href="#">Donar</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
     
 </main>
 
-</body>
+
+<!-- <script src="https://kit.fontawesome.com/f3d5cbbad8.js" crossorigin="anonymous"></script>
+ --></body>
 <footer>
     <div class="foot">
     <h3 class="autor">&copy; Autor: Augusto Fons</h3>
