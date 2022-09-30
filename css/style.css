@@ -41,7 +41,7 @@
 .navBar {
     background-color: rgba(10, 16, 13,0.75);
     width: 100%;
-    height: 75px;
+    min-height: 75px;
     border-radius: 0px 0px 30px 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -300,7 +300,6 @@ li{
 
     .img {
     grid-row:3;
-    grid-column: 1/13;
     max-height: max-content;
     display: flex;
     align-items: flex-end;
@@ -419,7 +418,7 @@ li{
     /* FOOTER */
 
     footer {
-    height: 100px;
+    min-height: 100px;
     background-color: rgba(0, 0, 0,0.8);   
     align-items: center;
 
@@ -427,48 +426,42 @@ li{
 
     .foot {
         width: 100%;
-        height: 100%;
+        min-height: 100px;
+        padding: 10px;
         display: flex;
-        justify-content: space-between;
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        border: #000 solid;
     }
 
     .autor {
         color: whitesmoke;
         width: max-content;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: 2px;
         font-family:'Alegreya Sans';
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 15px;
-
     }
 
     .enlaces {
         color: whitesmoke;
-        width: max-content;
-
+        width: 100%;
         display: flex;
-        justify-content: center;
-        column-gap: 50px;
-        margin-right:15px;
-
+        justify-content: space-evenly;
+        column-gap: 70px;
+        row-gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .enlaces a{
+    .enlaces a {
         font-family:'Alegreya Sans';
         color: whitesmoke;
         letter-spacing:2px;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 400;
         text-decoration:underline;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
     }
 
     /* PAGINA CONTINUAR : */
@@ -566,11 +559,13 @@ li{
     .perfiles {
         max-width: 1440px;
         max-height: 100%;
-        display: flex;
-        column-gap: 60px;
-        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-    }
+        column-gap: 50px;
+        row-gap: 60px;
+        margin: 50px;
+        justify-items: center;    }
 
     /* cards general */
 
@@ -580,14 +575,17 @@ li{
     border-radius: 35px;
     border: white double 4px;
     box-shadow: 0 0 10px #dc4c11;
-    height: 350px;
-    max-width: 340px;
+    display: flex;
+    align-items:center;
+    align-content: space-evenly;
+    flex-direction: column;
+    column-gap: 10px;
+    width: 80%;
+    padding: 10px;
     }
-
 
     .card:hover .user .foto-user {
         box-shadow: 0 0 10px #dc4c11;
-
     }
 
     .user {
@@ -595,38 +593,51 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
+    min-height: max-content;
+    }
+
+    .contImg {
+        max-width: 70%;
+        height: max-content;
+        padding: 5px;
+        margin-top: -25px;
     }
 
     .user .foto-user {
     border-radius: 100px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid #FAEAFF;
-    margin-top: -30px;
+    width: 100%;
+    height: 100%;
+    border: 4px double #FAEAFF;
+    margin-top: -25px;
+
     }
 
     .icono-position {
-        position: relative;
-        top: 10px;
         font-size: 28px;
         color: white;
         cursor: pointer;
+        padding: 1px;
     }
-    
+
     .fa-heart{
         color: white;
         cursor: pointer;
         font-size: 28px;
-        margin-top: 10px;
-        margin-right: 20px;
     }
     
     .fa-heart:focus{
         color: red;
     }
 
+    .txt-card {
+        width: 100%;
+        min-height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .nombre{
-    font-family: 'Alegreya Sans';
     font-size: 28px; 
     letter-spacing: 3px;
     color: white;
@@ -634,51 +645,51 @@ li{
     }
 
     .descripcion {
-    font-family: 'Alegreya Sans';
     font-size: 18px;
     letter-spacing: 1px;
     color: white;
     text-align: center;
     display: flex;
     align-items: center;
-    margin: 10px;
-    height: 70px;
+    margin: 5px;
     }
 
     .contacts {
         display: flex;
         justify-content: center;
-        column-gap: 30px; 
-
+        column-gap: 30px;
+        width: 100%; 
+        min-height: 8%;
+        margin: 5px;
     }
 
-    a .fa-brands {
+    a .fa-brands{
         color: white;
         justify-content: center;
         font-size: 28px;
         transition: 500ms;
     }
 
-    .fa-brands:hover, .fa-music:hover, .fa-palette:hover, .fa-xmark:hover {
+    .fa-brands:hover, .fa-music:hover, .fa-book-open:hover, .fa-palette:hover, .fa-xmark:hover {
         color: #2F4858;
         transition: 500ms;
     }
 
     .botonesUser {
     display: flex;
-    justify-self: flex-end;
     justify-content: space-evenly;
     width: 100%;
-    height: 50px;
+    height: 10%;
     align-items: flex-end;
+    margin: 10px;
     }
 
     .btnUser {
     display: flex;
+    margin-bottom: 5px;
 }
 
     .btnUser a {
-
     z-index: 5;
     box-shadow: 0 0 15px 1px #000;
     color: #FAEAFF;
@@ -715,6 +726,7 @@ li{
 #reproducir {
     width: min-content;
     visibility: hidden;
+    display: none;
 }
 
 #reproducir:checked ~ .music {
@@ -748,6 +760,7 @@ left: 0px;
 #leer {
     width: min-content;
     visibility: hidden;
+    display: none;
 }
 
 #leer:checked ~ .ifm {
@@ -777,6 +790,7 @@ left: 0px;
 #pintura {
     width: min-content;
     visibility: hidden;
+    display: none;
 }
 
 #pintura:checked ~ .ifm {
@@ -791,3 +805,100 @@ left: 0px;
     background-color: rgba(0, 0, 0,0.4);
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .txt-card {
+        min-height: 47%;
+    }
+}
+
+@media (max-width: 1050px) {
+    
+    .navBar {
+        grid-template-areas: 'logo botones botones botones' ;  
+    }
+
+    .perfiles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .txt-card {
+        min-height: 35%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .navBotones {    
+        column-gap:40px;
+    }
+
+    .txt-card {
+        min-height: 190px;
+    }
+}
+
+@media (max-width: 720px) {
+    .navBar {
+        background-color: rgba(10, 16, 13,0.75);
+        width: 100%;
+        height: 115px;
+        border-radius: 0px 0px 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: '. logo .' 'botones botones botones' ;  
+        transition: all 1s;
+    }
+    .logo {
+        grid-area: logo;
+        margin-top: 10px;
+        width: max-content;
+        display: flex;
+        justify-content: center;
+    }
+    .perfiles {
+        width: 100%;
+        grid-template-columns: 100%;
+        margin: 50px 10px 30px 10px;
+        column-gap: 0px;
+    }
+    .card {
+        border: white double 4px;
+        column-gap: 0px;
+        max-width: 350px;
+        }
+
+    .txt-card {
+        min-height: 35%;
+    }
+
+    .contImg {
+        max-width: 50%;
+        margin-top: -20px;
+    }
+
+    .user .foto-user {
+    border: 2px solid #FAEAFF;
+    margin-top: -20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .botones {
+        box-shadow:inset 0px 1px 0px 0px #fce2c1;
+        background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+        border-radius:6px;
+        border:1px solid #eeb44f;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:'Alegreya Sans';
+        font-size:16px;
+        letter-spacing: 2px;
+        font-weight:bold;
+        padding:6px 9px;
+        text-shadow:0px 1px 0px #cc9f52;
+        text-decoration:none;
+    }
+}
